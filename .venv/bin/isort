@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/luke/Sigma/Data Engineering/tech_interview/tech_interview_wk8/.venv/bin/python3.11" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from isort.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
